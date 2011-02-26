@@ -122,13 +122,13 @@ a:hover, .ui-widget-content a:hover
 
 .home .master-topbar-container
 {
-	background: url(../Images/home-top-bg.png);
+	background: url(../images/home-top-bg.png);
 	height: 344px;
 }
 
 .master-topbar-container
 {
-	background: url(../Images/header.png);
+	background: url(../images/header.png);
 	height: 148px;
 	border-bottom: 1px #cfcfcf solid; /*margin-bottom: 2.0em;*/
 }
@@ -201,7 +201,7 @@ a:hover, .ui-widget-content a:hover
 .master-topbar .head
 {
 	height: 110px;
-	background: url(../Images/home-logo.png) no-repeat;
+	background: url(../images/home-logo.png) no-repeat;
 }
 
 .home .master-topbar
@@ -210,13 +210,13 @@ a:hover, .ui-widget-content a:hover
 	overflow: hidden;
 	margin-bottom: 1em;
 	height: 286px;
-	background: url(../Images/home-logo.png) no-repeat;
+	background: url(../images/home-logo.png) no-repeat;
 	position: relative;
 }
 
 .master-content-container
 {
-	background: url(../Images/bg.png);
+	background: url(../images/bg.png);
 	padding-bottom: 20px;
 	padding-top: 10px;
 	overflow: auto;
@@ -641,7 +641,7 @@ a.button:active span
 {
 	padding-bottom: 11px;
 	background-color: Green;
-	background: url(../Images/shadow.png) right bottom no-repeat;
+	background: url(../images/shadow.png) right bottom no-repeat;
 }
 
 .area
@@ -834,7 +834,7 @@ blockquote
 {
 	padding: 10px;
 	font-size: 1.2em;
-	background: url(../../Images/quote.gif) top left no-repeat;
+	background: url(../../images/quote.gif) top left no-repeat;
 	color: #666;
 }
 
@@ -1110,7 +1110,7 @@ cite
 	width: 625px;
 	margin-left: -27px;
 	position: absolute;
-	background: url(/Images/blue-heading-cap.png) no-repeat;
+	background: url(/images/blue-heading-cap.png) no-repeat;
 	margin-bottom: 200px;
 	color: #fff;
 }
@@ -1124,7 +1124,7 @@ cite
 	margin-left: 7px;
 	height: 38px;
 	display: block;
-	background: url(/Images/blue-heading-bg.png);
+	background: url(/images/blue-heading-bg.png);
 }
 
 .add-heading .plus
@@ -1138,7 +1138,7 @@ cite
 .add-heading .add-button
 {
 	float: right;
-	background: url(/Images/blue-heading-action.png) no-repeat;
+	background: url(/images/blue-heading-action.png) no-repeat;
 	padding: 0 20px 0 40px;
 	cursor: pointer;
 	font-size: 0.8em;
@@ -1244,7 +1244,7 @@ strong
 /* New Stuff Here */
 #page-header
 {
-	background: url(/Images/header-bg.png) repeat-x;
+	background: url(/images/header-bg.png) repeat-x;
 	height: 43px;
 }
 #page-header-content
@@ -1261,7 +1261,7 @@ strong
 #page-header-content-right
 {
 	float: right;
-	background: url(/Images/search-bar.png) no-repeat;
+	background: url(/images/search-bar.png) no-repeat;
 	background-position: 100px 9px;
 	height: 43px;
 	width: 400px;
@@ -1334,7 +1334,7 @@ strong
 {
 	width: 459px;
 	height: 134px;
-	background: url(/Images/bullet-bg.png);
+	background: url(/images/bullet-bg.png);
 	position: absolute;
 	top: 23px;
 	left: 480px;
@@ -1354,7 +1354,7 @@ strong
 
 #home-bullets li
 {
-	background: url(/Images/bullet.png) no-repeat;
+	background: url(/images/bullet.png) no-repeat;
 	padding-left: 40px;
 	margin-bottom: 12px;
 	font-weight: bold;
