@@ -1,4 +1,6 @@
 Goalwiki::Application.routes.draw do
+  
+  match '*a' => redirect('/authentication/signin')
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

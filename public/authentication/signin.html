@@ -1,0 +1,242 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head><title>
+	
+    Sign in - GoalWiki
+
+</title>
+    <meta name="Description" content="Sign in to Goal Wiki.">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" /><link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18886546-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <div class="master-wrapper">
+        <div class="master-notification">
+            <p>
+            </p>
+        </div>
+        
+<div id="page-header">
+    <div id="page-header-content">
+        <div id="page-header-content-left">
+            <a href="/" id="sa-logo">
+                <img src="/Images/sa-logo.png" alt="GoalWiki" /></a>
+            <ul id="navigation">
+                
+                <li>
+                    <a href="/list/popular">Popular</a></li>
+                <li>
+                    <a href="/list/recent/">Recent</a></li>
+            </ul>
+        </div>
+        <div id="page-header-content-right">
+            <ul id="user-links">
+<li><a href="http://blog.goalwiki.com">Blog</a></li>
+                
+                <li><a href="#" onclick="UserVoice.Popin.show(uservoiceOptions); return false;">Feedback</a></li>
+                <li><a href="/Authentication/SignIn">Sign in</a></li>
+                
+            </ul>
+            <form action="/List/Search" method="post"><input class="master-search-bar" id="search-input" name="SearchString" type="text" value="" />
+            <a href="javascript:void(0)" id="search-button" title="submit">
+                <img src="/Images/search-button.png" alt="Go" /></a></form></div>
+    </div>
+</div>
+
+        <div class="master-content-container">
+            
+                <div class="master-content">
+                    
+    <style type="text/css">
+        .field input
+        {
+            width: 80% !important;
+        }
+    </style>
+    <div style="overflow: auto">
+        <div class="area-shadow">
+            <div class="area" style="background-color: #f7f7f7">
+                
+                <div class="alpha-access-code">
+                    <h3 style="margin-bottom: 10px">
+                        Beta enrollment is now closed. But dont worry...</h3>
+                    <p style="margin-bottom: 10px;">
+                        Leave your name and email address and we'll notify you once we launch the site.</p>
+                    <form action="/Authentication/AddAlphaRegistration" method="post">
+                    <p style="margin-bottom: 10px">
+                        <input id="FirstName" name="FirstName" type="text" value="" /></p>
+                    <p style="margin-bottom: 10px">
+                        <input id="EmailAddress" name="EmailAddress" type="text" value="" /></p>
+                    <p style="margin-bottom: 30px; overflow: auto;">
+                        <a href="javascript:void(0)" class="button" title="submit"><span>Notify Me</span></a></p>
+                    </form>
+                    <!--<h3>
+                        Please enter your alpha access code <span style="font-size: 0.7em; float: right; position: relative; top: 5px;">Don't have an alpha access code? Request one on our <a href="/">home page</a>.</span></h3>
+                    <form action="" onsubmit="checkAccessCode(); return false;">
+                    <div style="float: left">
+                        <input type="text" id="alphaAccessCode" /></div>
+                    <div style="float: left; padding-left: 10px;">
+                        <a href="#" class="button" onclick="checkAccessCode()"><span>Enter</span></a></div>
+                    </form>-->
+                </div>
+                
+                <div class="login-area">
+                    <div style="width: 435px; float: left; border-right: 1px dotted #BBB">
+                        <h1>
+                            New User</h1>
+                        <form action="/Authentication/SignUp" method="post"><input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" />
+                        <fieldset>
+                            <div class="field">
+                                <label>
+                                    Email</label>
+                                <input id="Email" name="Email" type="text" value="" />
+                            </div>
+                            <div class="field">
+                                <label>
+                                    Password</label>
+                                <input id="Password" name="Password" type="password" />
+                            </div>
+                            <div class="field">
+                                <label>
+                                    Display name</label>
+                                <input class="enter-key-submit" id="DisplayName" name="DisplayName" type="text" value="" />
+                            </div>
+                        </fieldset>
+                        <a href="javascript:void(0)" class="button" title="submit"><span>Sign up</span></a>
+                        </form>
+                    </div>
+                    <div style="width: 435px; float: right">
+                        <h1>
+                            Existing User</h1>
+                        <form action="/Authentication/SignIn" method="post"><input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" />
+                        <fieldset class="enter-key-form">
+                            <div class="field">
+                                <label>
+                                    Email</label>
+                                <input id="Email" name="Email" type="text" value="" />
+                            </div>
+                            <div class="field">
+                                <label>
+                                    Password</label>
+                                <input class="enter-key-submit" id="Password" name="Password" type="password" />
+                            </div>
+                        </fieldset>
+                        <a href="javascript:void(0)" class="button" title="submit"><span>Sign in</span></a>
+                        </form>
+                        <fb:login-button perms="email,publish_stream,offline_access" autologoutlink="true">
+                        </fb:login-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+            <div class="master-footer-container">
+                <div class="master-footer">
+                    © 2010 GoalWiki. All Rights Reserved.</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://www.google.com/jsapi?key=ABCDEFG"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2");
+            google.load("jqueryui", "1.8.1");
+        </script>
+        <script src="../../Scripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script>
+        <script src="../../Scripts/General.js" type="text/javascript"></script>
+        
+    <div id="fb-root">
+    </div>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script>
+        $(function () {
+            if ($(".alpha-access-code").length == 0) {
+                $('.login-area').show();
+            }
+
+            setWatermark("#FirstName", "First Name");
+            setWatermark("#EmailAddress", "Email Address");
+        });
+
+        function checkAccessCode() {
+            if ($('#alphaAccessCode').val().toLowerCase() == 'icecream') {
+                $('.alpha-access-code').hide();
+                $('.login-area').show();
+
+                document.cookie = "hasAccess=1; path=/";
+            } else {
+                alert('Incorrect access code.');
+            }
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({ appId: '148561538502693', status: true, cookie: true,
+                xfbml: true
+            });
+
+            FB.Event.subscribe('auth.sessionChange', function (response) {
+                if (response.session) {
+                    window.location = "/Authentication/SignInFacebook/";
+                } else {
+                }
+            });
+        };
+
+
+        (function () {
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+            e.async = true;
+            document.getElementById('fb-root').appendChild(e);
+        } ());
+
+    </script>
+    
+    <!-- Google Website Optimizer Conversion Script -->
+    <script type="text/javascript">
+        if (typeof (_gat) != 'object') document.write('<sc' + 'ript src="http' +
+(document.location.protocol == 'https:' ? 's://ssl' : '://www') +
+'.google-analytics.com/ga.js"></sc' + 'ript>')</script>
+    <script type="text/javascript">
+        try {
+            var gwoTracker = _gat._getTracker("UA-20429419-1");
+            gwoTracker._trackPageview("/1869172197/goal");
+        } catch (err) { }</script>
+    <!-- End of Google Website Optimizer Conversion Script -->
+    
+        <script type="text/javascript">
+            var uservoiceOptions = {
+                key: 'stickyadvice',
+                host: 'stickyadvice.uservoice.com',
+                forum: '60807',
+                lang: 'en',
+                showTab: false
+            };
+            function _loadUserVoice() {
+                var s = document.createElement('script');
+                s.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js";
+                document.getElementsByTagName('head')[0].appendChild(s);
+            }
+            _loadSuper = window.onload;
+            window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function () { _loadSuper(); _loadUserVoice(); };
+        </script>
+</body>
+</html>
